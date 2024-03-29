@@ -2,9 +2,9 @@ import type {NextApiRequest, NextApiResponse} from 'next'
 
 import { NextRequest, NextResponse } from 'next/server'
 
-let data = [""];
+let data:string[] = [];
 
-export async function GET (request:NextApiRequest){
+export async function GET (){
   return new NextResponse(JSON.stringify({ emails: data }), {
   status: 200,
 });
