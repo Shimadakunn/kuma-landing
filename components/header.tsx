@@ -5,14 +5,30 @@ import { Button } from "@/components/ui/button";
 import Logo from "@/public/logo-white.png";
 
 const Header = () => {
+    const scrollToElement = () => {
+        const targetElement = document.getElementById('targetElement');
+        targetElement?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        targetElement?.focus({ preventScroll: true });
+      };
     return ( 
-        <header className="fixed w-full h-20 p-4 flex items-center justify-between z-10">
+        <header className="fixed w-full h-20 p-12 flex items-center justify-between z-10">
             <div className="text-5xl font-[Monument] font-black tracking-tighter flex items-center justify-start">
                 <Image src={Logo} width={50} height={50} alt="logo" className="mr-4"/>
                 <div>KUMA</div> 
             </div>
-            <div>
-                <Button className="font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40">Get Started</Button>
+            <div className="flex items-center justify-center space-x-8">
+                <div className="font-[SFPro] text-xl cursor-pointer hover:text-gray-300 duration-150"
+                    onClick={()=>{
+                        window.open('https://linktr.ee/kuma_protocol', '_blank');
+                    }}>
+                    Discover
+                </div>
+                <a className="font-[SFPro] text-xl cursor-pointer hover:text-gray-300 duration-150"
+                href="mailto:kuma-protocol@proton.me">
+                    Contact
+                </a>
+                <Button className="font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40 active:scale-95"
+                    onClick={scrollToElement}>Get Started</Button>
             </div>
         </header>
     );

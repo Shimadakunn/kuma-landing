@@ -54,3 +54,18 @@
   font-family: SFPro;
   src: url(~/public/fonts/sfpro.OTF) format("woff");
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #88888881;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #55555593;
+}

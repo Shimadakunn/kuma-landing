@@ -31,24 +31,57 @@ export function ThreeDCardDemo({image}:{image:any}) {
 }
 
 export function Info() {
+  const scrollToElement = () => {
+    const targetElement = document.getElementById('targetElement');
+    targetElement?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    targetElement?.focus({ preventScroll: true });
+  };
     return(
         <>
             <div className="w-full flex items-center justify-center">
-                <div className="flex justify-start items-center border border-red-500 px-64 py-32 space-x-48">
+                <div className="flex justify-start items-center px-64 py-32 space-x-48">
                     <ThreeDCardDemo image={Logo}/>
                     <div className="space-y-8">
-                        <h1 className="text-5xl font-[Monument]">Hello World</h1>
-                        <h2 className="text-3xl">Hello World</h2>
-                        <Button className="font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40">Get Started</Button>
+                        <h1 className="text-5xl font-[Monument]"
+                          data-aos="fade-up"
+                          data-aos-delay="300"
+                          data-aos-ease="ease-in-out"
+                          data-aos-once="true">
+                            Hello World
+                        </h1>
+                        <h2 className="text-3xl"
+                        data-aos="fade-up"
+                        data-aos-ease="ease-in-out"
+                        data-aos-delay="400"
+                        data-aos-once="true">Hello World</h2>
+                        <Button className=" active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40"
+                        data-aos="zoom-in"
+                        data-aos-ease="ease-in-out"
+                        data-aos-delay="600"
+                        data-aos-once="true" 
+                        onClick={scrollToElement}>Get Started</Button>
                     </div>
                 </div>
             </div>
             <div className="w-full flex items-center justify-center">
-            <div className="flex justify-end items-center border border-red-500 px-64 pb-32 space-x-48">
+            <div className="flex justify-end items-center px-64 pb-32 space-x-48">
                 <div className="space-y-8">
-                    <h1 className="text-5xl font-[Monument]">Hello World</h1>
-                    <h2 className="text-3xl">Hello World</h2>
-                    <Button className="font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40">Get Started</Button>
+                    <h1 className="text-5xl font-[Monument]"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-ease="ease-in-out"
+                    data-aos-once="true">Hello World</h1>
+                    <h2 className="text-3xl"
+                    data-aos="fade-up"
+                    data-aos-ease="ease-in-out"
+                    data-aos-delay="400"
+                    data-aos-once="true">Hello World</h2>
+                    <Button className="active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40"
+                    data-aos="zoom-in"
+                    data-aos-ease="ease-in-out"
+                    data-aos-delay="600"
+                    data-aos-once="true"
+                    onClick={scrollToElement}>Get Started</Button>
                 </div>
                 <ThreeDCardDemo image={Logo2}/>
             </div>
