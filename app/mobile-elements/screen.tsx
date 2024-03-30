@@ -27,16 +27,10 @@ const Screen = () => {
 
 export default Screen;
 
-const Header = () => {
-    const scrollToElement = () => {
-        const targetElement = document.getElementById('targetElement');
-        targetElement?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        targetElement?.focus({ preventScroll: true });
-      };
-  
+const Header = () => {  
   return (
     <>
-      <h1 className="text-4xl font-[SFPro] font-black "
+      <h1 className="text-3xl font-[SFPro] font-black"
         data-aos="fade-up"
         data-aos-ease="ease-in-out"
         data-aos-delay="300"
@@ -44,7 +38,6 @@ const Header = () => {
         Easy access to <span className="font-[Monument]">DeFi</span>
         <br /> with your own <span className="font-[Monument]">Keys</span>
       </h1>
-     
     </>
   );
 };

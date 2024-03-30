@@ -22,7 +22,7 @@ export function Footer() {
                         <Image src={Logo} alt="Logo" className="w-16" draggable={false}/>
                         <div className="">KUMA</div> 
                     </div>
-                    <p>
+                    <p className="text-center">
                         Make the DeFi great again.
                     </p>
                     <div className="items-center gap-x-3 space-y-3 sm:flex sm:justify-center sm:space-y-0">

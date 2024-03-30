@@ -35,10 +35,10 @@ const Element = () => {
   };
 
   return (
-    <div className="flex items-center justify-center p-4 py-16 bg-white/5">
-      <div className="flex flex-col items-center justify-center space-y-4">
-        <div className="text-xl font-bold">
-          Keep yourself updated with the latest news and updates.
+    <div className="flex items-center justify-center py-12 bg-white/5 text-center">
+      <div className="flex flex-col items-center justify-center space-y-8">
+        <div className="text-2xl font-bold">
+          Whitelist for early access.
         </div>
         <form onSubmit={handleSubmit}>
           <div className="flex flex-row items-center justify-center space-x-8">
