@@ -35,7 +35,7 @@ const Element = () => {
   };
 
   return (
-    <div className="flex items-center justify-center p-4 pb-16">
+    <div className="flex items-center justify-center p-4 py-16 bg-white/5">
       <div className="flex flex-col items-center justify-center space-y-4">
         <div className="text-xl font-bold">
           Keep yourself updated with the latest news and updates.

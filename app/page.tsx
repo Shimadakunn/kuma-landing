@@ -4,7 +4,7 @@ import Lenis from '@studio-freight/lenis';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { useEffect } from 'react'; 
+import { useEffect, useState } from 'react'; 
 
 import Header from '@/components/header';
 import Screen from './elements/screen';
@@ -13,7 +13,13 @@ import Info from './elements/info';
 import Input from './elements/input';
 import Contact from './elements/contact';
 
+import HeaderMobile from '@/components/header-mobile';
+import ScreenMobile from './mobile-elements/screen';
+import SponsorsMobile from './mobile-elements/sponsors';
+import InfoMobile from './mobile-elements/info';
+
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     AOS.init();
     const lenis = new Lenis();
@@ -22,17 +28,36 @@ export default function Home() {
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
+    const checkIfMobile = () => {
+      const screenWidth = window.innerWidth;
+      setIsMobile(screenWidth < 768);
+    };
+    checkIfMobile();
+    console.log(isMobile)
+    window.addEventListener('resize', checkIfMobile);
+    return () => window.removeEventListener('resize', checkIfMobile);
   }, []);
   return (
     <>
+    {!isMobile ? <>
       <Header />
-      <div className='h-[300vh]'>
         <Screen/>
         <Sponsors/>
         <Info/>
         <Input/>
         <Contact/>
-      </div>
+    </>
+    
+     : 
+     <>
+      <HeaderMobile />
+      <ScreenMobile/>
+      <SponsorsMobile/>
+      <InfoMobile/>
+      <Input/>
+      <Contact/>
+      </>}
+       
     </>
    
   );

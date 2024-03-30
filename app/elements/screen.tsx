@@ -1,4 +1,4 @@
-import { ContainerScroll } from "@/components/ui/container-scroll-animation";
+import { ContainerScroll } from "@/components/ui/scroll";
 import Image from "next/image";
 import Logo from "@/public/images/Desktop.png";
 import { Button } from "@/components/ui/button";
