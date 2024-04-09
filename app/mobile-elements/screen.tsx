@@ -37,13 +37,12 @@ export default Screen;
 const Header = () => {  
   return (
     <>
-      <h1 className="text-3xl font-[SFPro] font-black"
+      <h1 className="text-xl font-[SFPro] font-black"
         data-aos="fade-up"
         data-aos-ease="ease-in-out"
         data-aos-delay="300"
         data-aos-once="true">
-        Your all-in-one <span className="font-[Monument]">Crosschain App</span> 
-        <br />  <span className="font-[Monument]"></span>
+        Your all-in-one <br/> <span className="font-[Monument]">Crosschain App</span> 
       </h1>
     </>
   );
