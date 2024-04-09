@@ -42,7 +42,7 @@ const Header = () => {
         data-aos-ease="ease-in-out"
         data-aos-delay="300"
         data-aos-once="true">
-        Your all-in-one <br/> <span className="font-[Monument]">Crosschain App</span> 
+        Your all-in-one <br/> <span className="font-[Monument] text-2xl">Crosschain App</span> 
       </h1>
     </>
   );
