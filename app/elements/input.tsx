@@ -23,7 +23,7 @@ const Element = () => {
     console.log(data.success);
     if (data.success) {
       toast({
-        description: "✅ Successfully subscribed!",
+        description: "✅ Successfully registered!",
       });
       setEmail("");
     } else {
