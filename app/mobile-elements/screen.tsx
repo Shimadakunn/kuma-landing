@@ -1,9 +1,12 @@
 import { ContainerScroll } from "@/components/ui/scroll-mobile";
 import Image from "next/image";
-import Logo from "@/public/images/Desktop.png";
+
 import Design from "@/public/images/1.png";
 import Card from "@/public/images/5.png";
-import { Button } from "@/components/ui/button";
+import Eth from "@/public/elements/eth-white.png";
+import Coin from "@/public/elements/coin-white.png";
+import Btc from "@/public/elements/btc-white.png";
+
 const Screen = () => {
     
   return (
@@ -36,7 +39,7 @@ export default Screen;
 
 const Header = () => {  
   return (
-    <>
+    <div className="relative">
       <h1 className="text-xl font-[SFPro] font-black"
         data-aos="fade-up"
         data-aos-ease="ease-in-out"
@@ -44,6 +47,12 @@ const Header = () => {
         data-aos-once="true">
         Your all-in-one <br/> <span className="font-[Monument] text-2xl">Crosschain App</span> 
       </h1>
-    </>
+      <Image
+          src={Eth}
+          className="absolute top-0 right-0 w-8 transform translate-y-[50%] translate-x-[70%]"
+          draggable={false}
+          alt="logo"
+      />
+    </div>
   );
 };
