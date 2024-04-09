@@ -1,17 +1,19 @@
 import { ContainerScroll } from "@/components/ui/scroll-mobile";
 import Image from "next/image";
 import Logo from "@/public/images/Desktop.png";
+import Design from "@/public/images/1.png";
+import Card from "@/public/images/5.png";
 import { Button } from "@/components/ui/button";
 const Screen = () => {
     
   return (
     
-    <div className="flex justify-center items-center flex-col">
+    <div className="relative flex justify-center items-center flex-col">
         <ContainerScroll titleComponent={<Header />}>
         <Image
-            src={Logo}
-            height={720}
-            width={1400}
+            src={Design}
+            height={500}
+            width={500}
             className="rounded-2xl object-cover h-full object-left-top "
             draggable={false}
             alt="logo"
@@ -20,7 +22,12 @@ const Screen = () => {
             data-aos-once="true"
         />
         </ContainerScroll>
-        
+        <Image
+            src={Card}
+            className="absolute bottom-0 left-1/2 w-[60vw] transform translate-y-[25%] translate-x-[-50%] opacity-50"
+            draggable={false}
+            alt="logo"
+        />
     </div>
   );
 };
@@ -35,8 +42,8 @@ const Header = () => {
         data-aos-ease="ease-in-out"
         data-aos-delay="300"
         data-aos-once="true">
-        Easy access to <span className="font-[Monument]">DeFi</span>
-        <br /> with your own <span className="font-[Monument]">Keys</span>
+        Your all-in-one <span className="font-[Monument]">Crosschain App</span> 
+        <br />  <span className="font-[Monument]"></span>
       </h1>
     </>
   );

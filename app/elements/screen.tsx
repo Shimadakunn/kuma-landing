@@ -1,15 +1,17 @@
 import { ContainerScroll } from "@/components/ui/scroll";
 import Image from "next/image";
-import Logo from "@/public/images/Desktop.png";
+import Card from "@/public/images/5.png";
+import Design from "@/public/images/1.png";
 import { Button } from "@/components/ui/button";
 const Screen = () => {
   return (
-    <ContainerScroll titleComponent={<Header />}>
+    <div className="relative">
+      <ContainerScroll titleComponent={<Header />}>
       <Image
-        src={Logo}
-        height={720}
-        width={1400}
-        className="rounded-2xl object-cover h-full object-left-top"
+        src={Design}
+        height={800}
+        width={800}
+        className="rounded-2xl object-cover h-full object-left-top scale-50"
         draggable={false}
         alt="logo"
         data-aos="zoom-in-up"
@@ -17,6 +19,14 @@ const Screen = () => {
         data-aos-once="true"
       />
     </ContainerScroll>
+      <Image
+            src={Card}
+            className="absolute bottom-0 left-1/4 w-[40vw] transform translate-y-[25%] translate-x-[-50%] opacity-50"
+            draggable={false}
+            alt="logo"
+        />
+    </div>
+    
   );
 };
 
@@ -35,10 +45,10 @@ const Header = () => {
         data-aos-ease="ease-in-out"
         data-aos-delay="300"
         data-aos-once="true">
-        Easy access to <span className="font-[Monument]">DeFi</span>
-        <br /> with your own <span className="font-[Monument]">Keys</span>
+        Your all-in-one <span className="font-[Monument]"></span>
+        <br /> <span className="font-[Monument]">Crosschain App</span>
       </h1>
-      <Button className=" active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40"
+      <Button className="font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40 active:scale-95"
         data-aos="zoom-in"
         data-aos-ease="ease-in-out"
         data-aos-delay="500"

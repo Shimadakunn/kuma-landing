@@ -19,7 +19,7 @@ const Header = () => {
             <div className="flex items-center justify-center space-x-8">
                 <div className="font-[SFPro] text-xl cursor-pointer hover:text-gray-300 duration-150"
                     onClick={()=>{
-                        window.open('https://linktr.ee/kuma_protocol', '_blank');
+                        window.open('https://linktr.ee/kuma_paw', '_blank');
                     }}>
                     Discover
                 </div>

@@ -53,7 +53,7 @@ const Element = () => {
               id="targetElement"
             />
             <Button
-              className="active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40"
+              className="bg-white active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40"
               type="submit"
             >
               Submit

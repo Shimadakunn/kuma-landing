@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 import Logo from "@/public/logo-white.png";
-import { Twitter, Linkedin  } from 'lucide-react';
+import { Linkedin, Twitter } from 'lucide-react';
 
 const Contact = () => {
     return ( 
@@ -26,11 +26,11 @@ export function Footer() {
                         Make the DeFi great again.
                     </p>
                     <div className="items-center gap-x-3 space-y-3 sm:flex sm:justify-center sm:space-y-0">
-                    <Button className="active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40 w-full sm:w-auto"
+                    <Button className="bg-white active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40 w-full sm:w-auto"
                         onClick={()=>{
-                            window.open('https://linktr.ee/kuma_protocol', '_blank');
+                            window.open('https://linktr.ee/kuma_paw', '_blank');
                         }}>
-                        Lets Get Started
+                        Lets Get Connected
                     </Button>
                         <a className="flex items-center justify-center gap-x-2 py-2 px-4 text-gray-700 hover:text-gray-500 font-medium duration-150 active:bg-gray-100 border rounded-lg md:inline-flex cursor-pointer"
                             href="mailto:kuma-protocol@proton.me">

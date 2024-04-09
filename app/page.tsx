@@ -10,6 +10,7 @@ import Header from '@/components/header';
 import Screen from './elements/screen';
 import Sponsors from './elements/sponsors';
 import Info from './elements/info';
+import Video from './elements/video';
 import Input from './elements/input';
 import Contact from './elements/contact';
 
@@ -17,6 +18,7 @@ import HeaderMobile from '@/components/header-mobile';
 import ScreenMobile from './mobile-elements/screen';
 import SponsorsMobile from './mobile-elements/sponsors';
 import InfoMobile from './mobile-elements/info';
+import VideoMobile from './mobile-elements/video';
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -42,8 +44,9 @@ export default function Home() {
     {!isMobile ? <>
       <Header />
         <Screen/>
-        <Sponsors/>
+        {/* <Sponsors/> */}
         <Info/>
+        <Video/>
         <Input/>
         <Contact/>
     </>
@@ -52,8 +55,9 @@ export default function Home() {
      <>
       <HeaderMobile />
       <ScreenMobile/>
-      <SponsorsMobile/>
+      {/* <SponsorsMobile/> */}
       <InfoMobile/>
+      <VideoMobile/>
       <Input/>
       <Contact/>
       </>}

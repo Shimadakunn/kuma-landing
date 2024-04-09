@@ -9,6 +9,10 @@ import Crypto from "@/public/images/crypto.png";
 import Defi from "@/public/images/defi.png";
 import Wallets from "@/public/images/wallets.png";
 import Gas from "@/public/images/gas.png";
+import Card from "@/public/images/4.png";
+import Card2 from "@/public/images/6.png";
+import Card3 from "@/public/images/2.png";
+import Card4 from "@/public/images/3.png";
 import { Button } from "@/components/ui/button";
 
 export function ThreeDCardDemo({ image }: { image: any }) {
@@ -39,7 +43,7 @@ export function Info() {
   };
   return (
     <>
-      <div className="w-full flex items-center justify-center ">
+      <div className="relative w-full flex items-center justify-center ">
         <div className="flex justify-start items-center px-16 py-32 space-x-16 max-w-fit">
           <ThreeDCardDemo image={Crypto} />
           <div className="space-y-8">
@@ -49,7 +53,7 @@ export function Info() {
               data-aos-ease="ease-in-out"
               data-aos-once="true"
             >
-              Buy your favorite crypto
+              Detain crypto onchain
             </h1>
             <h2
               className="text-xl"
@@ -58,10 +62,16 @@ export function Info() {
               data-aos-delay="100"
               data-aos-once="true"
             >
-              Buy, sell, trade and follow <br/> your favorite cryptocurrencies without bothering about chains.
+              Buy crypto on 10+ chains with the ease of a few clicks.
             </h2>
           </div>
         </div>
+        <Image
+            src={Card2}
+            className="absolute bottom-0 right-0 w-[40vw] transform translate-y-[35%] opacity-50"
+            draggable={false}
+            alt="logo"
+        />
       </div>
       <div className="w-full flex items-center justify-center">
         <div className="flex justify-end items-center px-16 pb-32 space-x-16">
@@ -72,7 +82,7 @@ export function Info() {
               data-aos-ease="ease-in-out"
               data-aos-once="true"
             >
-              Pay gas fees with ease
+              Pay crosschain gas fees
             </h1>
             <h2
               className="text-xl"
@@ -81,10 +91,10 @@ export function Info() {
               data-aos-delay="100"
               data-aos-once="true"
             >
-              Gas fees are a thing of the past.<br/> You can top up gas credits and pay for transactions on any chains.
+              Pay gas fees on any chain in one place. <br/>Choose how much you want to spend.
             </h2>
             <Button
-              className="active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40"
+              className="bg-white active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40"
               data-aos="zoom-in"
               data-aos-ease="ease-in-out"
               data-aos-delay="300"
@@ -97,7 +107,7 @@ export function Info() {
           <ThreeDCardDemo image={Gas} />
         </div>
       </div>
-      <div className="w-full flex items-center justify-center">
+      <div className="relative w-full flex items-center justify-center">
         <div className="flex justify-start items-center px-16 pb-32 space-x-16">
           <ThreeDCardDemo image={Defi} />
           <div className="space-y-8">
@@ -107,7 +117,7 @@ export function Info() {
               data-aos-ease="ease-in-out"
               data-aos-once="true"
             >
-              Access to DeFi
+              Access to whole DeFi
             </h1>
             <h2
               className="text-xl"
@@ -116,10 +126,10 @@ export function Info() {
               data-aos-delay="100"
               data-aos-once="true"
             >
-              Gain interest, lend, and stake tokens on any chain without the need to switch wallets.
+              Interact with 20+ protocols on different chains in one place.
             </h2>
             <Button
-              className=" active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40"
+              className="bg-white active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40"
               data-aos="zoom-in"
               data-aos-ease="ease-in-out"
               data-aos-delay="300"
@@ -130,6 +140,12 @@ export function Info() {
             </Button>
           </div>
         </div>
+        <Image
+            src={Card}
+            className="absolute bottom-0 left-0 w-[40vw] transform translate-y-[50%] opacity-50"
+            draggable={false}
+            alt="logo"
+        />
       </div>
       <div className="w-full flex items-center justify-center">
         <div className="flex justify-end items-center px-16 pb-24 space-x-16">

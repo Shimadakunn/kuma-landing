@@ -58,7 +58,7 @@ export const ContainerScroll = ({
             {children}
           </Card>
         <div className="flex items-center justify-center flex-col">
-          <Button className=" active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40"
+          <Button className="bg-white active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40"
           data-aos="zoom-in"
           data-aos-ease="ease-in-out"
           data-aos-delay="500"
