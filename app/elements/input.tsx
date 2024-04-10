@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
+import { Linkedin, Twitter, TreePalm } from "lucide-react";
 
 const Element = () => {
   const [email, setEmail] = useState("");
@@ -12,11 +13,11 @@ const Element = () => {
 
   useEffect(() => {
     async function getLoader() {
-      const { bouncy } = await import('ldrs')
-      bouncy.register()
+      const { bouncy } = await import("ldrs");
+      bouncy.register();
     }
-    getLoader()
-  }, [])
+    getLoader();
+  }, []);
   const handleSubmit = async (event: any) => {
     setLoading(true);
     event.preventDefault();
@@ -75,14 +76,37 @@ const Element = () => {
               type="submit"
               disabled={loading}
             >
-              {loading ? ( <div className="px-2"><l-bouncy
-            size="30"
-            speed="1.75"
-            color="black"
-          ></l-bouncy></div>) : <>Submit</>}
+              {loading ? (
+                <div className="px-2">
+                  <l-bouncy size="30" speed="1.75" color="black"></l-bouncy>
+                </div>
+              ) : (
+                <>Submit</>
+              )}
             </Button>
           </div>
         </form>
+        <div>And follow us on socials</div>
+        <div className="flex flex-row items-center justify-center space-x-8">
+        <TreePalm className="cursor-pointer" onClick={()=>{
+                            window.open('https://linktr.ee/kuma_paw', '_blank');
+                        }}/>
+          <Twitter
+            className="cursor-pointer"
+            onClick={() => {
+              window.open("https://twitter.com/Kuma_protocol", "_blank");
+            }}
+          />
+          <Linkedin
+            className="cursor-pointer"
+            onClick={() => {
+              window.open(
+                "https://www.linkedin.com/company/kuma-protocol/",
+                "_blank"
+              );
+            }}
+          />
+        </div>
       </div>
     </div>
   );
