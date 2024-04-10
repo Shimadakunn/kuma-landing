@@ -49,7 +49,7 @@ const Header = () => {
       </h1>
       <Image
           src={Eth}
-          className="absolute top-0 right-0 w-8 transform translate-y-[50%] translate-x-[70%]"
+          className="absolute top-0 right-1/4 w-8 transform translate-y-[-25%] translate-x-[50%]"
           draggable={false}
           alt="logo"
       />
