@@ -61,7 +61,7 @@ const Element = () => {
         <form onSubmit={handleSubmit}>
           <div className="flex flex-row items-center justify-center space-x-8">
             <Input
-              placeholder="jhondoe@gmail.com"
+              placeholder="johndoe@gmail.com"
               name="email"
               type="email"
               required
