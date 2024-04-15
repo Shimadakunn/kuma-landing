@@ -73,7 +73,7 @@ export function Info() {
             alt="logo"
         />
       </div>
-      <div className="w-full flex items-center justify-center">
+      <div className="relative w-full flex items-center justify-center">
         <div className="flex justify-end items-center px-16 pb-32 space-x-16">
           <div className="space-y-8">
             <h1
@@ -148,7 +148,7 @@ export function Info() {
         />
       </div>
       <div className="w-full flex items-center justify-center">
-        <div className="flex justify-end items-center px-16 pb-24 space-x-16">
+        <div className="flex justify-end items-center px-16 space-x-16">
           <div className="space-y-8">
             <h1
               className="text-5xl font-[Monument]"
