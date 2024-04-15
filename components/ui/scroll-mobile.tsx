@@ -37,9 +37,9 @@ export const ContainerScroll = ({
   const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
   const scrollToElement = () => {
-    const targetElement = document.getElementById('targetElement');
-    targetElement?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    targetElement?.focus({ preventScroll: true });
+    const input = document.getElementById('input');
+    input?.scrollIntoView({ behavior: 'smooth', block: 'start'});
+    input?.focus({ preventScroll: true });
   };
 
   return (

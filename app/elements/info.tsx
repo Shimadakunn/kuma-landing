@@ -37,9 +37,9 @@ export function ThreeDCardDemo({ image }: { image: any }) {
 
 export function Info() {
   const scrollToElement = () => {
-    const targetElement = document.getElementById("targetElement");
-    targetElement?.scrollIntoView({ behavior: "smooth", block: "start" });
-    targetElement?.focus({ preventScroll: true });
+    const input = document.getElementById('input');
+        input?.scrollIntoView({ behavior: 'smooth', block: 'center'});
+        input?.focus({ preventScroll: true });
   };
   return (
     <>

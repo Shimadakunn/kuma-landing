@@ -11,11 +11,6 @@ import Card2 from "@/public/images/6.png";
 import { Button } from "@/components/ui/button";
 
 const Info = () => {
-  const scrollToElement = () => {
-    const targetElement = document.getElementById("targetElement");
-    targetElement?.scrollIntoView({ behavior: "smooth", block: "start" });
-    targetElement?.focus({ preventScroll: true });
-  };
   return (
     <div className="py-8">
       <div className="relative p-8 flex items-center justify-center flex-col space-y-4">
