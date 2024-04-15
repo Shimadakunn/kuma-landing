@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 import Logo from "@/public/logo-white.png";
-import { Linkedin, Twitter,   } from 'lucide-react';
+import { Linkedin, Twitter, TreePalm  } from 'lucide-react';
 
 const Contact = () => {
     return ( 
@@ -47,7 +47,12 @@ export function Footer() {
                         <div className="text-gray-800 hover:text-gray-500 duration-150 cursor-pointer">
                             Terms
                         </div>
-                        
+                        <TreePalm
+            className="cursor-pointer"
+            onClick={() => {
+              window.open("https://linktr.ee/kuma_paw", "_blank");
+            }}
+          />
                         <Twitter className="cursor-pointer" onClick={()=>{
                             window.open('https://twitter.com/Kuma_protocol', '_blank');
                         }}/>
