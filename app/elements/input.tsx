@@ -60,7 +60,7 @@ const Element = () => {
       <div className="flex flex-col items-center justify-center space-y-8">
         <div className="text-2xl font-bold">Whitelist for early access.</div>
         <form onSubmit={handleSubmit}>
-          <div className="flex flex-row items-center justify-center space-x-8">
+          <div className="flex flex-row items-center justify-center space-x-8" id="container">
             <Input
               placeholder="johndoe@gmail.com"
               name="email"
@@ -69,7 +69,7 @@ const Element = () => {
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               className="w-64 border-white"
-              id="targetElement"
+              id="input"
             />
             <Button
               className="bg-white active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40"

@@ -7,7 +7,7 @@ import Logo from "@/public/logo-white.png";
 const Header = () => {
     const scrollToElement = () => {
         const targetElement = document.getElementById('targetElement');
-        targetElement?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        targetElement?.scrollIntoView({ behavior: 'smooth', block: 'center' });
         targetElement?.focus({ preventScroll: true });
       };
     return ( 

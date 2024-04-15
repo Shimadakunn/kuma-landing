@@ -6,9 +6,10 @@ import Logo from "@/public/logo-white.png";
 
 const Header = () => {
     const scrollToElement = () => {
-        const targetElement = document.getElementById('targetElement');
-        targetElement?.scrollIntoView({ behavior: 'smooth', inline: 'center' });
-        targetElement?.focus({ preventScroll: true });
+        const container = document.getElementById('container');
+        const input = document.getElementById('input');
+        container?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // targetElement?.focus({ preventScroll: true });
       };
     return ( 
         <header className="fixed w-full h-20 p-4 flex items-center justify-between z-10">
