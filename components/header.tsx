@@ -5,11 +5,12 @@ import { Button } from "@/components/ui/button";
 import Logo from "@/public/logo-white.png";
 
 const Header = () => {
-    const scrollToElement = () => {
-        const targetElement = document.getElementById('targetElement');
-        targetElement?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        targetElement?.focus({ preventScroll: true });
-      };
+    const scrollToElement: React.MouseEventHandler<HTMLButtonElement> = (event) => {
+        event?.stopPropagation();
+        const input = document.getElementById('input');
+        input?.scrollIntoView({ behavior: 'smooth', block: 'center'});
+        input?.focus({ preventScroll: true });
+    };
     return ( 
         <header className="fixed w-full h-20 p-12 flex items-center justify-between z-10">
             <div className="text-5xl font-[Monument] font-black tracking-tighter flex items-center justify-start">
