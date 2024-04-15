@@ -8,7 +8,7 @@ const Header = () => {
     const scrollToElement = () => {
         const targetElement = document.getElementById('targetElement');
         targetElement?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        targetElement?.focus({ preventScroll: true });
+        // targetElement?.focus({ preventScroll: true });
       };
     return ( 
         <header className="fixed w-full h-20 p-4 flex items-center justify-between z-10">
