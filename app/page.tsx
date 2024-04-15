@@ -46,8 +46,8 @@ export default function Home() {
         <Screen/>
         {/* <Sponsors/> */}
         <Info/>
-        <Video/>
         <Input/>
+        <Video/>
         <Contact/>
     </>
     
@@ -57,8 +57,8 @@ export default function Home() {
       <ScreenMobile/>
       {/* <SponsorsMobile/> */}
       <InfoMobile/>
-      <VideoMobile/>
       <Input/>
+      <VideoMobile/>
       <Contact/>
       </>}
        

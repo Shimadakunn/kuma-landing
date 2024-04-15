@@ -56,7 +56,7 @@ const Element = () => {
     }
   };
   return (
-    <div className="flex items-center justify-center py-12 bg-accent mt-8 md:rounded-xl md:mx-36 text-center">
+    <div className="flex items-center justify-center py-12 bg-accent mb-12 md:mb-24 md:rounded-xl md:mx-36 text-center">
       <div className="flex flex-col items-center justify-center space-y-8">
         <div className="text-2xl font-bold">Whitelist for early access.</div>
         <form onSubmit={handleSubmit}>
