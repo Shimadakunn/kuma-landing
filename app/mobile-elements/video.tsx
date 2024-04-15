@@ -8,7 +8,7 @@ const MyComponent = () => {
       <h1 className="text-xl font-[Monument] text-center">
         Demo Video
       </h1>
-      <ReactPlayer url={demo} playing loop width="100%" height="100%"/>
+      <ReactPlayer url={demo} controls playing muted loop width="100%" height="100%"/>
     </div>
   );
 };
