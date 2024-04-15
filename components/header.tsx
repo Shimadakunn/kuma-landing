@@ -5,10 +5,9 @@ import { Button } from "@/components/ui/button";
 import Logo from "@/public/logo-white.png";
 
 const Header = () => {
-    const scrollToElement: React.MouseEventHandler<HTMLButtonElement> = (event) => {
-        event?.stopPropagation();
+    const scrollToElement = () => {
         const input = document.getElementById('input');
-        input?.scrollIntoView({ behavior: 'smooth', block: 'center'});
+        input?.scrollIntoView({ behavior: 'smooth', block: 'end'});
         input?.focus({ preventScroll: true });
     };
     return ( 
