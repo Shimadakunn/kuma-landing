@@ -8,8 +8,8 @@ const Header = () => {
     const scrollToElement = () => {
         const container = document.getElementById('container');
         const input = document.getElementById('input');
-        container?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        // targetElement?.focus({ preventScroll: true });
+        input?.scrollTo({ behavior: 'smooth', top: input?.offsetTop});
+        input?.focus({ preventScroll: true });
       };
     return ( 
         <header className="fixed w-full h-20 p-4 flex items-center justify-between z-10">
