@@ -88,9 +88,12 @@ const Element = () => {
         </form>
         <div>And follow us on socials</div>
         <div className="flex flex-row items-center justify-center space-x-8">
-        <TreePalm className="cursor-pointer" onClick={()=>{
-                            window.open('https://linktr.ee/kuma_paw', '_blank');
-                        }}/>
+          <TreePalm
+            className="cursor-pointer"
+            onClick={() => {
+              window.open("https://linktr.ee/kuma_paw", "_blank");
+            }}
+          />
           <Twitter
             className="cursor-pointer"
             onClick={() => {
