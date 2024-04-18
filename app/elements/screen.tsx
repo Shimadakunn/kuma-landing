@@ -1,5 +1,6 @@
 import { ContainerScroll } from "@/components/ui/scroll";
 import Image from "next/image";
+import Eth from "@/public/elements/eth-white.png";
 import Card from "@/public/images/5.png";
 import Design from "@/public/images/1.png";
 import { Button } from "@/components/ui/button";
@@ -40,13 +41,19 @@ const Header = () => {
   };
   return (
     <>
-      <h1 className="text-5xl font-[SFPro] font-black"
+      <h1 className="relative text-5xl font-[SFPro] font-black"
         data-aos="fade-up"
         data-aos-ease="ease-in-out"
         data-aos-delay="300"
         data-aos-once="true">
         The <span className="font-[Monument]">Blockchain</span>
         <br /> in your <span className="font-[Monument]">Paw</span>
+        <Image
+          src={Eth}
+          className="absolute bottom-0 right-1/4 w-12 transform translate-y-[25%] translate-x-[125%]"
+          draggable={false}
+          alt="logo"
+      />
       </h1>
       <Button className="font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40 active:scale-95"
         data-aos="zoom-in"
