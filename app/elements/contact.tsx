@@ -20,10 +20,10 @@ export function Footer() {
                 <div className="space-y-6 sm:max-w-md sm:mx-auto sm:text-center">
                     <div className="text-5xl font-[Monument] font-black tracking-tighter text-white flex flex-row items-center justify-center space-x-4">
                         <Image src={Logo} alt="Logo" className="w-16" draggable={false}/>
-                        <div className="">KUMA</div> 
+                        <div className="">Kuma</div> 
                     </div>
                     <p className="text-center">
-                        Make the DeFi great again.
+                        Making decentralized investing accessible.
                     </p>
                     <div className="items-center gap-x-3 space-y-3 sm:flex sm:justify-center sm:space-y-0">
                     <Button className="bg-white active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40 w-full sm:w-auto"

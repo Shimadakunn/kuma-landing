@@ -14,7 +14,7 @@ const Header = () => {
         <header className="fixed w-full h-20 p-12 flex items-center justify-between z-10">
             <div className="text-5xl font-[Monument] font-black tracking-tighter flex items-center justify-start">
                 <Image src={Logo} width={50} height={50} alt="logo" className="mr-4"/>
-                <div>KUMA</div> 
+                <div>Kuma</div> 
             </div>
             <div className="flex items-center justify-center space-x-8">
                 <div className="font-[SFPro] text-xl cursor-pointer hover:text-gray-300 duration-150"

@@ -45,8 +45,8 @@ const Header = () => {
         data-aos-ease="ease-in-out"
         data-aos-delay="300"
         data-aos-once="true">
-        Your all-in-one <span className="font-[Monument]"></span>
-        <br /> <span className="font-[Monument]">Crosschain App</span>
+        The <span className="font-[Monument]">Blockchain</span>
+        <br /> in your <span className="font-[Monument]">Paw</span>
       </h1>
       <Button className="font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40 active:scale-95"
         data-aos="zoom-in"
@@ -56,6 +56,13 @@ const Header = () => {
         onClick={scrollToElement}>
         Get Started
       </Button>
+      <h1 className="text-2xl font-[SFPro] font-sm text-white/50"
+        data-aos="fade-up"
+        data-aos-ease="ease-in-out"
+        data-aos-delay="300"
+        data-aos-once="true">
+        Making decentralized investing accessible to everyone.
+      </h1>
     </>
   );
 };

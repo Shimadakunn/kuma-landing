@@ -39,20 +39,38 @@ export default Screen;
 
 const Header = () => {  
   return (
-    <div className="relative">
+    <>
+     <div className="relative">
       <h1 className="text-xl font-[SFPro] font-black"
         data-aos="fade-up"
         data-aos-ease="ease-in-out"
         data-aos-delay="300"
         data-aos-once="true">
-        Your all-in-one <br/> <span className="font-[Monument] text-2xl">Crosschain App</span> 
+        {/* Your all-in-one <br/> <span className="font-[Monument] text-2xl">Crosschain App</span>  */}
+        The <span className="font-[Monument] text-2xl">Blockchain</span> <br/> in your <span className="font-[Monument] text-2xl">Paw</span> 
       </h1>
-      <Image
+      {/* <Image
           src={Eth}
           className="absolute top-0 right-0 w-8 transform translate-y-[50%] translate-x-[70%]"
           draggable={false}
           alt="logo"
+      /> */}
+      <Image
+          src={Eth}
+          className="absolute bottom-0 right-1/4 w-8 transform translate-y-[25%] translate-x-[100%]"
+          draggable={false}
+          alt="logo"
       />
+      
     </div>
+    {/* <h1 className="text-xs font-[SFPro] font-sm text-white/50"
+        data-aos="fade-up"
+        data-aos-ease="ease-in-out"
+        data-aos-delay="300"
+        data-aos-once="true">
+        Making decentralized investing accessible to everyone.
+      </h1> */}
+    </>
+   
   );
 };

@@ -20,7 +20,7 @@ const Info = () => {
           data-aos-ease="ease-in-out"
           data-aos-once="true"
         >
-          Detain crypto onchain
+          Own crypto onchain
         </h1>
         <h2
           className="text-sm text-center text-gray-400"
@@ -81,7 +81,7 @@ const Info = () => {
           data-aos-ease="ease-in-out"
           data-aos-once="true"
         >
-          Access to whole DeFi
+          Access to high yield
         </h1>
         <h2
           className="text-sm text-center text-gray-400"
@@ -90,7 +90,7 @@ const Info = () => {
           data-aos-delay="100"
           data-aos-once="true"
         >
-          Interact with 20+ protocols on different chains in one place.
+          Interact with 20+ DeFi protocols on different chains in one place.
         </h2>
         <Image
           src={Defi}

@@ -53,7 +53,7 @@ export function Info() {
               data-aos-ease="ease-in-out"
               data-aos-once="true"
             >
-              Detain crypto onchain
+              Own crypto onchain
             </h1>
             <h2
               className="text-xl"
@@ -62,7 +62,7 @@ export function Info() {
               data-aos-delay="100"
               data-aos-once="true"
             >
-              Buy crypto on 10+ chains with the ease of a few clicks.
+              Buy cryptos on 10+ chains with the ease of a few clicks.
             </h2>
           </div>
         </div>
@@ -117,7 +117,7 @@ export function Info() {
               data-aos-ease="ease-in-out"
               data-aos-once="true"
             >
-              Access to whole DeFi
+              Access to <br/> high yield
             </h1>
             <h2
               className="text-xl"
@@ -126,7 +126,7 @@ export function Info() {
               data-aos-delay="100"
               data-aos-once="true"
             >
-              Interact with 20+ protocols on different chains in one place.
+              Interact with 20+ DeFi protocols on different chains in one place.
             </h2>
             <Button
               className="bg-white active:scale-95 font-bold hover:scale-105 transition ease-in-out duration-300 font-[SFPro] text-lg shadow-md shadow-white/40"
