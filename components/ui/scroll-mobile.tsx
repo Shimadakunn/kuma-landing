@@ -38,7 +38,7 @@ export const ContainerScroll = ({
 
   const scrollToElement = () => {
     const input = document.getElementById('input');
-    input?.scrollIntoView({ behavior: 'smooth', block: 'start'});
+    input?.scrollIntoView({ behavior: 'smooth', block: 'center'});
     input?.focus({ preventScroll: true });
   };
 

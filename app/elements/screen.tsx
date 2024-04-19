@@ -63,7 +63,7 @@ const Header = () => {
         onClick={scrollToElement}>
         Get Started
       </Button>
-      <h1 className="text-2xl font-[SFPro] font-sm text-white/50"
+      <h1 className="text-lg font-[SFPro] font-sm text-white/50"
         data-aos="fade-up"
         data-aos-ease="ease-in-out"
         data-aos-delay="300"
