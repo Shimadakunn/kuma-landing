@@ -63,13 +63,13 @@ const Header = () => {
       />
       
     </div>
-    {/* <h1 className="text-xs font-[SFPro] font-sm text-white/50"
+    <h1 className="text-xs font-[SFPro] font-sm text-white/50"
         data-aos="fade-up"
         data-aos-ease="ease-in-out"
         data-aos-delay="300"
         data-aos-once="true">
-        Making decentralized investing accessible to everyone.
-      </h1> */}
+        Your All-in-one Blockchain Interface.
+      </h1>
     </>
    
   );
